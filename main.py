@@ -1,7 +1,12 @@
+
 def login(credential):
-    password = credential['password']
-    if password == 123:
-        print("Login successfull")
+    password = credential.get('password')
+    if password == None:
+        
+        print("Password doesn't exist")
+        
+    elif password== '123':
+        print('login successful')
     else:
         print("Invalid login")
 
